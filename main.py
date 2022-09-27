@@ -26,10 +26,9 @@ def pureConvert(refs,recs,scraps):
             refs = refs+(recs-2)/3
             recs = 2
 
-    global pure
     pure = round(refs*refined+recs*reclaimed+scraps*scrap,2)
-    print(pure)
+    return pure
 
-pureConvert(11,66,22) #example
+print(pureConvert(11,66,22)) #example
 
     
